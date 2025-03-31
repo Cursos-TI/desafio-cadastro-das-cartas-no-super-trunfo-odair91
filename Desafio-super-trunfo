@@ -1,0 +1,87 @@
+#include <stdio.h> // Inclui a biblioteca padrão de entrada e saída (stdio.h) para usar funções como printf e scanf.
+
+/* Esse é um teste pratico do meu curso de Redes de Computadores, disciplina de Programação de computadores 
+linguagem C.
+É um desafio para criar duas cartas de dois estado diferentes, onde pede para o usuária escolher e digitar os dados 
+de cada estado armazenar os dados nas variaveis e depois exibir o resultado de cada carta.*/
+
+int main() {
+    // Variáveis para a Carta 1//
+    char estado1;                  // Declara uma variável do tipo char para armazenar o estado da Carta 1 (A-H). 
+    char codigoCarta1[4];          // Declara um array de caracteres (string) para armazenar o código da Carta 1 (ex: A01).
+    char nomeCidade1[100];         // Declara um array de caracteres para armazenar o nome da cidade da Carta 1.
+    int populacao1;                // Declara uma variável inteira para armazenar a população da Carta 1.
+    float area1;                   // Declara uma variável float para armazenar a área da Carta 1 (em km²).
+    float pib1;                    // Declara uma variável float para armazenar o PIB da Carta 1 (em bilhões de reais).
+    int pontosTuristicos1;         // Declara uma variável inteira para armazenar o número de pontos turísticos da Carta 1.
+
+    // Variáveis para a Carta 2//
+
+    char estado2;                  // Declara uma variável do tipo char para armazenar o estado da Carta 2 (A-H).
+    char codigoCarta2[4];          // Declara um array de caracteres (string) para armazenar o código da Carta 2 (ex: B02).
+    char nomeCidade2[100];         // Declara um array de caracteres para armazenar o nome da cidade da Carta 2.
+    int populacao2;                // Declara uma variável inteira para armazenar a população da Carta 2.
+    float area2;                   // Declara uma variável float para armazenar a área da Carta 2 (em km²).
+    float pib2;                    // Declara uma variável float para armazenar o PIB da Carta 2 (em bilhões de reais).
+    int pontosTuristicos2;         // Declara uma variável inteira para armazenar o número de pontos turísticos da Carta 2.
+
+    // Leitura dos dados da Carta 1//
+
+    printf("Digite os dados da Carta 1:\n");    // Imprime uma mensagem pedindo para o usuário inserir os dados da Carta 1.
+    printf("Estado (A-H): ");                   // Imprime uma mensagem pedindo o estado da Carta 1.
+    scanf(" %c", &estado1);                     // Lê um caractere (estado) e armazena em 'estado1'. O espaço antes de %c referente ao espaços em branco extras.
+    printf("Código da Carta (ex: A01): ");      // Imprime uma mensagem pedindo o código da Carta 1.
+    scanf("%s", codigoCarta1);                  // Lê uma string (código) e armazena em 'codigoCarta1'.
+    printf("Nome da Cidade: ");                 // Imprime uma mensagem pedindo o nome da cidade da Carta 1.
+    scanf(" %[^\n]s", nomeCidade1);             // Lê uma linha inteira, incluindo espaços, e armazena em 'nomeCidade1'. %[^\n]s lê até encontrar uma nova linha.//
+    printf("População: ");                      // Imprime uma mensagem pedindo a população da Carta 1.               
+    scanf("%d", &populacao1);                   // Lê um inteiro (população) e armazena em 'populacao1'.
+    printf("Área (km²): ");                     // Imprime uma mensagem pedindo a área da Carta 1.
+    scanf("%f", &area1);                        // Lê um float (área) e armazena em 'area1'.               
+    printf("PIB (bilhões de reais): ");         // Imprime uma mensagem pedindo o PIB da Carta 1.
+    scanf("%f", &pib1);                         // Lê um float (PIB) e armazena em 'pib1'.
+    printf("Número de Pontos Turísticos: ");    // Imprime uma mensagem pedindo o número de pontos turísticos da Carta 1.
+    scanf("%d", &pontosTuristicos1);            // Lê um inteiro (número de pontos turísticos) e armazena em 'pontosTuristicos1'.
+
+    // Leitura dos dados da Carta 2//
+
+    printf("\nDigite os dados da Carta 2:\n");  // Imprime uma mensagem pedindo para o usuário inserir os dados da Carta 2.
+    printf("Estado (A-H): ");                   // Imprime uma mensagem pedindo o estado da Carta 2.
+    scanf(" %c", &estado2);                     // Lê um caractere (estado) e armazena em 'estado2'.
+    printf("Código da Carta (ex: B02): ");      // Imprime uma mensagem pedindo o código da Carta 2.
+    scanf("%s", codigoCarta2);                  // Lê uma string (código) e armazena em 'codigoCarta2'.             
+    printf("Nome da Cidade: ");                 // Imprime uma mensagem pedindo o nome da cidade da Carta 2.
+    scanf(" %[^\n]s", nomeCidade2);             // Lê uma linha inteira, incluindo espaços, e armazena em 'nomeCidade2'.
+    printf("População: ");                      // Imprime uma mensagem pedindo a população da Carta 2.
+    scanf("%d", &populacao2);                   // Lê um inteiro (população) e armazena em 'populacao2'.
+    printf("Área (km²): ");                     // Imprime uma mensagem pedindo a área da Carta 2.
+    scanf("%f", &area2);                        // Lê um float (área) e armazena em 'area2'.
+    printf("PIB (bilhões de reais): ");         // Imprime uma mensagem pedindo o PIB da Carta 2.
+    scanf("%f", &pib2);                         // Lê um float (PIB) e armazena em 'pib2'.
+    printf("Número de Pontos Turísticos: ");    // Imprime uma mensagem pedindo o número de pontos turísticos da Carta 2.
+    scanf("%d", &pontosTuristicos2);            // Lê um inteiro (número de pontos turísticos) e armazena em 'pontosTuristicos2'.
+
+    // Exibição dos dados da Carta 1//
+
+    printf("\nCarta 1:\n");                         // Imprime um cabeçalho para os dados da Carta 1.
+    printf("Estado: %c\n", estado1);                // Imprime o estado da Carta 1.
+    printf("Código: %s\n", codigoCarta1);           // Imprime o código da Carta 1.
+    printf("Nome da Cidade: %s\n", nomeCidade1);    // Imprime o nome da cidade da Carta 1.
+    printf("População: %d\n", populacao1);          // Imprime a população da Carta 1.
+    printf("Área: %.2f km²\n", area1);              // Imprime a área da Carta 1 com duas casas decimais.
+    printf("PIB: %.2f bilhões de reais\n", pib1);   // Imprime o PIB da Carta 1 com duas casas decimais.
+    printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);  // Imprime o número de pontos turísticos da Carta 1.
+
+    // Exibição dos dados da Carta 2//
+
+    printf("\nCarta 2:\n");                        // Imprime um cabeçalho para os dados da Carta 2.
+    printf("Estado: %c\n", estado2);               // Imprime o estado da Carta 2.
+    printf("Código: %s\n", codigoCarta2);          // Imprime o código da Carta 2.
+    printf("Nome da Cidade: %s\n", nomeCidade2);   // Imprime o nome da cidade da Carta 2.
+    printf("População: %d\n", populacao2);         // Imprime a população da Carta 2.
+    printf("Área: %.2f km²\n", area2);             // Imprime a área da Carta 2 com duas casas decimais.
+    printf("PIB: %.2f bilhões de reais\n", pib2);  // Imprime o PIB da Carta 2 com duas casas decimais.
+    printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2); // Imprime o número de pontos turísticos da Carta 2.
+
+    return 0;  // Indica que o programa terminou com sucesso.
+}
