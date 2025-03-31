@@ -11,7 +11,7 @@ int main() {
     char codigoCarta1[4];          // Declara um array de caracteres (string) para armazenar o código da Carta 1 (ex: A01).
     char nomeCidade1[100];         // Declara um array de caracteres para armazenar o nome da cidade da Carta 1.
     int populacao1;                // Declara uma variável inteira para armazenar a população da Carta 1.
-    float area1;                   // Declara uma variável float para armazenar a área da Carta 1 (em km²).
+    int area1;                     //Declara uma variável inteira para armazenar a área da Carta 1 (em km²).
     float pib1;                    // Declara uma variável float para armazenar o PIB da Carta 1 (em bilhões de reais).
     int pontosTuristicos1;         // Declara uma variável inteira para armazenar o número de pontos turísticos da Carta 1.
 
@@ -21,7 +21,7 @@ int main() {
     char codigoCarta2[4];          // Declara um array de caracteres (string) para armazenar o código da Carta 2 (ex: B02).
     char nomeCidade2[100];         // Declara um array de caracteres para armazenar o nome da cidade da Carta 2.
     int populacao2;                // Declara uma variável inteira para armazenar a população da Carta 2.
-    float area2;                   // Declara uma variável float para armazenar a área da Carta 2 (em km²).
+    int area2;                     // Declara uma variável inteira para armazenar a área da Carta 2 (em km²).
     float pib2;                    // Declara uma variável float para armazenar o PIB da Carta 2 (em bilhões de reais).
     int pontosTuristicos2;         // Declara uma variável inteira para armazenar o número de pontos turísticos da Carta 2.
 
@@ -37,7 +37,7 @@ int main() {
     printf("População: ");                      // Imprime uma mensagem pedindo a população da Carta 1.               
     scanf("%d", &populacao1);                   // Lê um inteiro (população) e armazena em 'populacao1'.
     printf("Área (km²): ");                     // Imprime uma mensagem pedindo a área da Carta 1.
-    scanf("%f", &area1);                        // Lê um float (área) e armazena em 'area1'.               
+    scanf("%d", &area1);                        // Lê um inteiro (área) e armazena em 'area1'.               
     printf("PIB (bilhões de reais): ");         // Imprime uma mensagem pedindo o PIB da Carta 1.
     scanf("%f", &pib1);                         // Lê um float (PIB) e armazena em 'pib1'.
     printf("Número de Pontos Turísticos: ");    // Imprime uma mensagem pedindo o número de pontos turísticos da Carta 1.
@@ -55,7 +55,7 @@ int main() {
     printf("População: ");                      // Imprime uma mensagem pedindo a população da Carta 2.
     scanf("%d", &populacao2);                   // Lê um inteiro (população) e armazena em 'populacao2'.
     printf("Área (km²): ");                     // Imprime uma mensagem pedindo a área da Carta 2.
-    scanf("%f", &area2);                        // Lê um float (área) e armazena em 'area2'.
+    scanf("%d", &area2);                        // Lê um inteiro (área) e armazena em 'area2'.
     printf("PIB (bilhões de reais): ");         // Imprime uma mensagem pedindo o PIB da Carta 2.
     scanf("%f", &pib2);                         // Lê um float (PIB) e armazena em 'pib2'.
     printf("Número de Pontos Turísticos: ");    // Imprime uma mensagem pedindo o número de pontos turísticos da Carta 2.
@@ -68,7 +68,7 @@ int main() {
     printf("Código: %s\n", codigoCarta1);           // Imprime o código da Carta 1.
     printf("Nome da Cidade: %s\n", nomeCidade1);    // Imprime o nome da cidade da Carta 1.
     printf("População: %d\n", populacao1);          // Imprime a população da Carta 1.
-    printf("Área: %.2f km²\n", area1);              // Imprime a área da Carta 1 com duas casas decimais.
+    printf("Área: %d km²\n", area1);              // Imprime a área da Carta 1 com duas casas decimais.
     printf("PIB: %.2f bilhões de reais\n", pib1);   // Imprime o PIB da Carta 1 com duas casas decimais.
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);  // Imprime o número de pontos turísticos da Carta 1.
 
@@ -79,7 +79,7 @@ int main() {
     printf("Código: %s\n", codigoCarta2);          // Imprime o código da Carta 2.
     printf("Nome da Cidade: %s\n", nomeCidade2);   // Imprime o nome da cidade da Carta 2.
     printf("População: %d\n", populacao2);         // Imprime a população da Carta 2.
-    printf("Área: %.2f km²\n", area2);             // Imprime a área da Carta 2 com duas casas decimais.
+    printf("Área: %d km²\n", area2);               // Imprime a área da Carta 2 com duas casas decimais.
     printf("PIB: %.2f bilhões de reais\n", pib2);  // Imprime o PIB da Carta 2 com duas casas decimais.
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2); // Imprime o número de pontos turísticos da Carta 2.
 
